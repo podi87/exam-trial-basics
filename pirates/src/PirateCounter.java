@@ -2,9 +2,13 @@ import java.util.*;
 
 public class PirateCounter{
 
-  static List<String> list;
-
   static class Pirate {
+
+
+    public static String getName(Pirate pirate) {
+      return name;
+    }
+
     static String name;
     static boolean hasWoodenLeg;
     static int gold;
@@ -28,11 +32,11 @@ public class PirateCounter{
 
 
   }
-  public static List pirateSeparator (ArrayList<Pirate> pirates) {
-    list = new ArrayList<>();
+  public static List pirateSeparator (List<Pirate> pirates) {
+    List<String> list = new ArrayList<>();
     for (int i = 0; i < pirates.size(); i++) {
       if (pirates.get(i).equals((Pirate.hasWoodenLeg == true && Pirate.gold > 15))){
-        list.add(pirates.get(i).toString());
+        list.add(Pirate.getName(pirates.get(i)));
        }
      }
      return list;
