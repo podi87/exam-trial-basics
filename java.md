@@ -32,4 +32,4 @@ The application is accepted if:
 ## 5. Question time! (~15 mins) [2p]
 
 ### How can you generate a random number? [2p]
-#### Your answer: [add your answer here]
+#### Your answer: [int rand = (int) Math.random() * 100; It generates a random number between 0 and 100.]
